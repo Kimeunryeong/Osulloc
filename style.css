@@ -2,8 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: "Sunflower", sans-serif; */
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: 'Gowun Dodum', sans-serif;
+  /* font-family: "Noto Sans KR", sans-serif; */
   color: #2f3136;
 }
 body {
@@ -106,7 +106,7 @@ i {
 #main-video p {
   margin: 0;
 }
-/* section #intro-sulloc */
+/* section #sulloc */
 #list{
   display: none;
 }
@@ -117,13 +117,31 @@ i {
     justify-content: center;
   }
   #list p {
-    padding: 10px 20px;
+    padding: 10px 15px;
   }
 }
 
-#intro-sulloc > * {
-  padding: 100px 20px;
+#sulloc > * {
+  padding: 100px 10px;
   width: 100vw;
+}
+/* #intro */
+.introBox {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 90px;
+  word-break: keep-all;
+  text-align: center;
+}
+.h1 {
+  font-size: 26px;
+}
+.introText {
+  margin-bottom: 50px;
+}
+.intro-img {
+  width: 100%;
 }
 
 /* footer */
