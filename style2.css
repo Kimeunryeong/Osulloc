@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* 헤더 */
+header {
+  background-color: #67625d;
+  height: 100vh;
+  background: url("./images/header.jpg") center;
+  background-size: cover;
+}
+header nav {
+  background: #67625d;
+  /* text-align: center; */
+}
+#toggle_btn, #toggle_menu {
+  display: none;
+}
+#btn_img i{
+  padding: 10px;
+  margin: 10px 0;
+}
+#toggle_btn:checked ~#toggle_menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#toggle_menu li {
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  padding: 15px;
+}
+header nav ul li a {
+  color: #d4d2c2;
+} 
+/* 콘텐츠 스타일 */
+#contents {
+  display: flex;
+  flex-direction: column;
+}
+#contents section {
+  border: 1px solid #d4d2c2;
+  padding: 50px 7%;
+}
+
+#contents section .content {
+    padding: 20px;
+    line-height: 2.5em;
+    font-size: 1.1em;
+}
+
+#contents section .page-title {
+    margin: 30px;
+    font-size: 1.3em;
+}
+
+.photo img {
+  width: 300px;
+  height: 200px;
+}
+#contents section .content .photo {
+  display: none;
+}
+footer {
+    background-color:#67625d;
+    text-align: center;
+    padding: 20px;
+    color:#d4d2c2;
+    font-size: 1.5em;
+}
+
+/* 테블릿 모드 -768px 이상*/
+@media screen and (min-width: 768px) and (max-width: 960px) {
+  #contents {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #contents section {
+    width: 50%;
+  }
+  #contents section#choice {
+    width: 100%;
+  }
+  #btn_img {
+    display: none;
+  }
+  #toggle_menu {
+    display : flex;
+    justify-content: space-around;
+  }
+  #toggle_menu li {
+    border: none;
+  }
+}
+
+/* PC모드  */
+@media screen and (min-width: 960px) {
+  #contents section .content .photo {
+    display: block;
+    text-align: center;
+  }
+  #contents section .content {
+    display: flex;
+  }
+  #contents section .content article {
+    width: 50%;
+  }
+  #btn_img {
+    display: none;
+  }
+  #toggle_menu {
+    display : flex;
+    justify-content: space-around;
+  }
+  #toggle_menu li {
+    border: none;
+  }
+}

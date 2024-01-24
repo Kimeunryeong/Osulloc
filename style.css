@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Sunflower", sans-serif; */
+  font-family: "Noto Sans KR", sans-serif;
+  color: #2f3136;
+}
+body {
+  font-size: 1em;
+  line-height: 1.5;
+  background-color: #f6f5ef;
+}
+a {
+  text-decoration: none;
+  color: #2f3136;
+}
+.header {
+  width: 100vw;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  background-color: #f6f5ef;
+}
+.header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header img {
+  height: 100%;
+  object-fit: fill;
+}
+i {
+  padding: 0 15px;
+}
+#nav_box {
+  display: none;
+}
+#nav_list {
+  width: 200px;
+  height: 100%;
+  background: #2f3136;
+  position: fixed;
+  right: -200px;
+  transition: all 0.35s;
+  opacity: 0.5;
+  z-index: 1;
+  top: 0;
+  padding: 15px;
+}
+#nav_box:checked + #nav_icon + #nav_list {
+  right: 0;
+}
+#nav_icon {
+  position: fixed;
+  cursor: pointer;
+  right: 0;
+  transition: all 0.35s;
+}
+#nav_box:checked + #nav_icon {
+  z-index: 2;
+  right: 200px;
+}
+#nav_list p {
+  padding: 15px 0;
+}
+
+/*  section #main-video */
+#main-video {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.mo-video {
+  width: 67.5vh;
+  height: 120vh;
+}
+
+.video-text {
+  z-index: 100;
+}
+#main-video .video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+#main-video .video-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  margin-top: -10vh;
+}
+
+.video-text p {
+  font-size: 1.1rem;
+  color: #fff;
+  font-weight: 500;
+}
+#main-video p {
+  margin: 0;
+}
+/* section #intro-sulloc */
+#list{
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  #list {
+    display: flex;
+    justify-content: center;
+  }
+  #list p {
+    padding: 10px 20px;
+  }
+}
+
+#intro-sulloc > * {
+  padding: 100px 20px;
+  width: 100vw;
+}
+
+/* footer */
+#footer {
+  background: #f6f5ef;
+}
+#footer > * {
+  color: #2f3136;
+}
+.footer-t {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#house-scroll {
+  display: none;
+}

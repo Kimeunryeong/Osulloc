@@ -1,0 +1,22 @@
+ㅁ카페소개, 오시는길, 이 달의 추천 모바일에서는 토글메뉴로 표현하기
+(제이쿼리 또는 css 사용)
+<script>
+      // 제이쿼리 토글 메뉴 구현을 위한 자바스크립트 소스
+      $(function () {
+        // 토글메뉴 플러그인 시행
+        let toggle = $("#toggle_btn");
+        let menu = $("nav ul");
+        $(toggle).on("click", function (e) {
+          e.preventDefault(); // 이벤트 기본동작 실행 막기
+          menu.slideToggle();
+        });
+      });
+
+      // 자바스크립트 토글메뉴 구현
+      // document.getElementById('toggle_btn').addEventListener('changed')
+    </script>
+
+ㅁ
+중단점 2개정도
+기간 빼도 됨
+영상 빼도 됨
