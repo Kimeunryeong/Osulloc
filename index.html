@@ -13,6 +13,30 @@
       rel="stylesheet"
     />
 
+    <!-- bx슬라이더 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- 캐러셀 bx슬라이더 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".slider").bxSlider({
+          minSlides: 4,
+          maxSlides: 4,
+          slideWidth: 170,
+          slideMargin: 10,
+          ticker: true,
+          speed: 9000,
+        });
+      });
+    </script>
+
     <!-- 폰트어썸 스크립트 -->
     <script
       src="https://kit.fontawesome.com/d8ef277078.js"
@@ -22,11 +46,11 @@
   <body>
     <header>
       <div class="header">
-        <img src="images/Osulloc_text_logo.png" />
+        <img src="images/Osulloc_text_logo_white.png" />
         <nav>
           <input type="checkbox" id="nav_box" />
           <label for="nav_box" id="nav_icon">
-            <i class="fa-solid fa-bars fa-lg" style="color: #2f3136"></i>
+            <i class="fa-solid fa-bars fa-lg" style="color: #dfd8c7"></i>
           </label>
           <div id="nav_list">
             <p><a href="#">OSULLOC</a></p>
@@ -67,75 +91,147 @@
     </section>
 
     <section id="sulloc">
+      <!-- 웹 리스트 -->
       <article id="list">
         <p>오설록</p>
         <p>시그니처 메뉴</p>
         <p>오설록 즐기기</p>
         <p>가까운 티하우스</p>
       </article>
-      <article id="intro">
-        <div class="intro">
-          <div class="introBox">
-            <h1 class="h1">오설록은,</h1>
-            <br />
-            <hr />
+      <!-- OSULLOC -->
+      <article>
+        <div class="introBox">
+          <h1 class="h1">오설록은,</h1>
+          <br />
+          <p class="introText">
+            "우리나라 차는 왜 없을까?" <br />
+            1979년, 제주도의 버려진 땅, 사람의 손 한번 닿지 않은 황무지 돌밭을
+            개간으로 시작해 차의 대중화를 위한 발돋움이 시작되었습니다.
+          </p>
+          <!-- 메인 캐러셀 이미지 -->
+          <section id="image">
+            <div class="wrapper">
+              <div class="slider">
+                <div>
+                  <img
+                    class="intro-img"
+                    src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/people_1.jpg"
+                    alt="osulloc_intro_img"
+                  />
+                </div>
+                <div>
+                  <img
+                    class="intro-img"
+                    src="https://img.sportsworldi.com/content/image/2016/01/05/20160105003896_0.jpg"
+                    alt="osulloc_intro_img"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="introBox">
+          <h3>오설록 티 뮤지엄</h3>
+          <p class="introText">
+            1980년 한국 최초의 녹차 브랜드 '설록차'가 탄생하였습니다. 오설록은
+            더 나아가 전문적으로 티를 만드는 '티 메이커'라는 브랜드 위상에
+            주목하여 생산부터 수확까지 모든 스토리를 담은 '오설록 티 뮤지엄'을
+            탄생시켰습니다.
+          </p>
+          <img
+            class="intro-img"
+            src="https://a.cdn-hotels.com/gdcs/production125/d721/8f79af8b-eca2-4503-a335-df49ab07e097.jpg?impolicy=fcrop&w=1600&h=1066&q=medium"
+            alt="osulloc_intro_img"
+          />
+          <img
+            class="intro-img"
+            src="https://minio.nculture.org/amsweb-opt/multimedia_assets/191/85886/94443/c/%EC%98%A4%EC%84%A4%EB%A1%9D-%ED%8B%B0-%EB%AE%A4%EC%A7%80%EC%97%84-%284%29_rev-medium-size.jpg"
+            alt="osulloc_intro_img"
+          />
+        </div>
+        <div class="introBox">
+          <h3>오설록 티 하우스,</h3>
+          <p class="introText">
+            티 뮤지엄을 바탕으로 도시에서도 제주의 차를 즐길수 있는 '오설록 티
+            하우스'가 탄생하였습니다. 단 6개의 매장으로 각 매장마다 독립된
+            인테리어와 콘텐츠, 음료와 디저트를 맛보실 수 있습니다.
+            <br />우리나라 茶, 오설록을 함께 즐기러 가보실까요?
+          </p>
+          <img
+            class="intro-img"
+            src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_st/teahouse_haeundae.webp"
+            alt="osulloc_intro_img"
+          />
+          <img
+            class="intro-img"
+            src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_st/teahouse_1979.webp"
+            alt="osulloc_intro_img"
+          />
+        </div>
+      </article>
+      <!-- SIGNATURE -->
+      <article id="signature">
+        <h1 class="h1">SIGNATURE</h1>
+        <!-- 시그니처 탭바 -->
+        <div class="tab_content">
+          <input type="radio" name="tabmenu" id="tab01" checked />
+          <label for="tab01">세작</label>
+          <input type="radio" name="tabmenu" id="tab02" />
+          <label for="tab02">녹차라떼</label>
+          <input type="radio" name="tabmenu" id="tab03" />
+          <label for="tab03">오프레도</label>
+          <input type="radio" name="tabmenu" id="tab04" />
+          <label for="tab04">프레쉬 한라봉 그린티</label>
+
+          <div class="conbox sejac">
+            <video src="images/sejac.mp4" controls></video>
             <p class="introText">
-              "우리나라 차는 왜 없을까?" <br />
-              1979년, 제주도의 버려진 땅, 사람의 손 한번 닿지 않은 황무지 돌밭을
-              개간으로 시작해 차의 대중화를 위한 발돋움이 시작되었습니다.
+              어린 찻잎을 재배하여 덖은 차, 세작은 풍부한 아미노산과 부드러운
+              끝맛으로 오설록의 시그니처 메뉴로 자리잡았습니다.
             </p>
-            <img
-              class="intro-img"
-              src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/people_1.jpg"
-              alt="osulloc_intro_img"
-            />
-            <img
-              class="intro-img"
-              src="https://img.sportsworldi.com/content/image/2016/01/05/20160105003896_0.jpg"
-              alt="osulloc_intro_img"
-            />
           </div>
-          <div class="introBox">
-            <h3>오설록 티 뮤지엄</h3>
+          <!-- 녹차라떼 -->
+          <div class="conbox gtlt">
+            <video
+              src="images/latte.mp4"
+              class="menu-vid"
+              controls
+              id="video2"
+            ></video>
             <p class="introText">
-              1980년 한국 최초의 녹차 브랜드 '설록차'가 탄생하였습니다. 오설록은
-              더 나아가 전문적으로 티를 만드는 '티 메이커'라는 브랜드 위상에
-              주목하여 생산부터 수확까지 모든 스토리를 담은 '오설록 티 뮤지엄'을
-              탄생시켰습니다.
+              오설록 녹차라떼는 가루 진 녹차를 이용하여 진하고 쌉싸름한 맛을
+              부드럽게 즐기는 분들이 선호하는 메뉴입니다.
             </p>
-            <img
-              class="intro-img"
-              src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/people_1.jpg"
-              alt="osulloc_intro_img"
-            />
           </div>
-          <div class="introBox">
-            <h3>오설록 티 하우스,</h3>
+          <!-- 오프레도 -->
+          <div class="conbox ofrd">
+            <video
+              src="images/ofredo1.mp4"
+              class="menu-vid"
+              controls
+              id="video3"
+            ></video>
             <p class="introText">
-              티 뮤지엄을 바탕으로 도시에서도 제주의 차를 즐길수 있는 '오설록 티
-              하우스'가 탄생하였습니다. 단 6개의 매장으로 각 매장마다 독립된
-              인테리어와 콘텐츠, 음료와 디저트를 맛보실 수 있습니다.
-              <br />우리나라 茶, 오설록을 함께 즐기러 가보실까요?
+              제주에서 나고 자란 재료로 만든 아이스크림과 부드러운 밀크 쉐이크의
+              조화로 많은 분들께 사랑받는 쉐이크 메뉴입니다.
             </p>
-            <img
-              class="intro-img"
-              src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/people_1.jpg"
-              alt="osulloc_intro_img"
-            /><a href="#">오설록의 자세한 이야기</a>
+          </div>
+          <!--프레시 한라봉 그린티 -->
+          <div class="conbox fhgt">
+            <video
+              src="images/hallabong.mp4"
+              class="menu-vid"
+              controls
+              id="video4"
+            ></video>
+            <p class="introText">
+              셔벗류의 시원한 음료로 프레쉬한 맛을 즐기실 수 있습니다.
+            </p>
           </div>
         </div>
       </article>
-      <article id="a2">
-        <div>
-          <h2>SIGNATURE</h2>
-          <div>세작</div>
-          <div>녹차라떼</div>
-          <div>녹차 오프레도</div>
-          <div>그린 화이트 롤케익</div>
-          <div>제주 그린티 아이스크림</div>
-        </div>
-      </article>
-      <article id="a3">
+      <!-- ENJOY OSULLOC -->
+      <article id="enjoy">
         <div>
           <h2>enjoy osulloc</h2>
           <p>오설록 즐기는 방법</p>

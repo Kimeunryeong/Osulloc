@@ -2,14 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Gowun Dodum', sans-serif;
+  font-family: "Gowun Dodum", sans-serif;
   /* font-family: "Noto Sans KR", sans-serif; */
-  color: #2f3136;
+  color: #2b1b17;
 }
 body {
   font-size: 1em;
   line-height: 1.5;
-  background-color: #f6f5ef;
 }
 a {
   text-decoration: none;
@@ -21,7 +20,7 @@ a {
   display: flex;
   justify-content: space-between;
   padding: 0 10px;
-  background-color: #f6f5ef;
+  background-color: #2b1b17;
 }
 .header nav {
   display: flex;
@@ -41,7 +40,7 @@ i {
 #nav_list {
   width: 200px;
   height: 100%;
-  background: #2f3136;
+  background: #2b1b17;
   position: fixed;
   right: -200px;
   transition: all 0.35s;
@@ -51,8 +50,7 @@ i {
   padding: 15px;
 }
 #nav_list a {
-  color:#f6f5ef;
-  
+  color: #dfd8c7;
 }
 #nav_box:checked + #nav_icon + #nav_list {
   right: 0;
@@ -62,6 +60,7 @@ i {
   cursor: pointer;
   right: 0;
   transition: all 0.35s;
+  z-index: 2;
 }
 #nav_box:checked + #nav_icon {
   z-index: 2;
@@ -80,7 +79,6 @@ i {
   width: 67.5vh;
   height: 120vh;
 }
-
 
 #main-video .video-wrapper {
   position: relative;
@@ -107,7 +105,7 @@ i {
   margin: 0;
 }
 /* section #sulloc */
-#list{
+#list {
   display: none;
 }
 
@@ -121,35 +119,95 @@ i {
   }
 }
 
-#sulloc > * {
-  padding: 100px 10px;
+#sulloc {
+  padding: 100px 10;
+  margin: 0 auto;
   width: 100vw;
 }
 /* #intro */
 .introBox {
   text-align: center;
   width: 100%;
-  margin: 0 auto;
-  margin-bottom: 90px;
-  word-break: keep-all;
+  margin: 100px auto;
   text-align: center;
+  padding: 10px;
 }
 .h1 {
-  font-size: 26px;
+  font-size: 28px;
+  text-align: center;
+  font-weight: bold;
 }
 .introText {
   margin-bottom: 50px;
+  word-break: keep-all;
 }
 .intro-img {
+  width: 95%;
+}
+
+.story_link {
+}
+/* SIGNATURE */
+#signature {
+}
+.tab_content {
+  margin: 30px auto;
+  text-align: center;
+}
+.conbox {
+  display: none;
+  text-align: center;
+  background: #2b1b17;
   width: 100%;
 }
 
+input[type="radio"] {
+  display: none;
+}
+input[type="radio"] + label {
+  display: inline-block;
+  padding: 10px;
+  color: #2b1b17;
+  cursor: pointer;
+  font-size: 0.98rem;
+}
+input[type="radio"]:checked + label {
+  background: #2b1b17;
+  color: #dfd8c7;
+  font-weight: bold;
+}
+#tab01:checked ~ .sejac,
+#tab02:checked ~ .gtlt,
+#tab03:checked ~ .ofrd,
+#tab04:checked ~ .fhgt {
+  display: inline-block;
+}
+.tab_content video {
+  margin: 50px 0 20px 0;
+  width: 80vw;
+}
+.conbox p {
+  color:#dfd8c7;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+/* enjoy osulloc */
+#enjoy {
+  padding: 10px;
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+}
+
+
+
 /* footer */
 #footer {
-  background: #f6f5ef;
+  background: #2b1b17;
 }
 #footer > * {
-  color: #2f3136;
+  color: #dfd8c7;
 }
 .footer-t {
   display: flex;
