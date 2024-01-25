@@ -21,18 +21,24 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
     />
+    <style>
+      /* bx슬라이더 */
+      .bx-wrapper {
+        border: 0;
+        box-shadow: none;
+      }
+    </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
     <script>
       $(document).ready(function () {
-        $(".slider").bxSlider({
-          minSlides: 4,
-          maxSlides: 4,
-          slideWidth: 170,
+        $(".slider4").bxSlider({
+          slideWidth: 200,
+          minSlides: 2,
+          maxSlides: 3,
+          moveSlides: 1,
           slideMargin: 10,
-          ticker: true,
-          speed: 9000,
         });
       });
     </script>
@@ -44,6 +50,7 @@
     ></script>
   </head>
   <body>
+    <!-- 헤더 -->
     <header>
       <div class="header">
         <img src="images/Osulloc_text_logo_white.png" />
@@ -55,8 +62,8 @@
           <div id="nav_list">
             <p><a href="#">OSULLOC</a></p>
             <p><a href="#">SIGNATURE</a></p>
-            <p><a href="#">ENJOY OSULLOC</a></p>
             <p><a href="#">FIND OSULLOC</a></p>
+            <p><a href="#">ENJOY OSULLOC</a></p>
             <hr />
             <br />
             <a href="https://www.instagram.com/osulloc_official/"
@@ -72,6 +79,7 @@
         </nav>
       </div>
     </header>
+    <!-- 섹션1: 메인 비디오 -->
     <section id="main-video">
       <div class="video-wrapper">
         <iframe
@@ -89,7 +97,7 @@
         </div>
       </div>
     </section>
-
+    <!-- 섹션2: 오설록 -->
     <section id="sulloc">
       <!-- 웹 리스트 -->
       <article id="list">
@@ -98,80 +106,148 @@
         <p>오설록 즐기기</p>
         <p>가까운 티하우스</p>
       </article>
-      <!-- OSULLOC -->
+      <!-- 오설록 -->
       <article>
+        <!-- 오설록 인트로 -->
         <div class="introBox">
-          <h1 class="h1">오설록은,</h1>
+          <p class="title">오설록을 아시나요?</p>
           <br />
           <p class="introText">
-            "우리나라 차는 왜 없을까?" <br />
+            <b>"우리나라 '茶'문화는 왜 없을까?"</b><br /><br />
+
+            세계 각지에서 차문화를 접한 한 남성의 의문에서 시작되었습니다.
+            <br /><br />
             1979년, 제주도의 버려진 땅, 사람의 손 한번 닿지 않은 황무지 돌밭을
             개간으로 시작해 차의 대중화를 위한 발돋움이 시작되었습니다.
           </p>
-          <!-- 메인 캐러셀 이미지 -->
-          <section id="image">
-            <div class="wrapper">
-              <div class="slider">
-                <div>
-                  <img
-                    class="intro-img"
-                    src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/people_1.jpg"
-                    alt="osulloc_intro_img"
-                  />
-                </div>
-                <div>
-                  <img
-                    class="intro-img"
-                    src="https://img.sportsworldi.com/content/image/2016/01/05/20160105003896_0.jpg"
-                    alt="osulloc_intro_img"
-                  />
-                </div>
+          <!-- 인트로-캐러셀 이미지 -->
+          <div class="wrapper">
+            <div class="slider4">
+              <div>
+                <img
+                  class="intro-img"
+                  src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/people_1.jpg"
+                  alt="osulloc_intro_img"
+                />
+              </div>
+              <div>
+                <img
+                  class="intro-img"
+                  src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/people_3.jpg"
+                  alt="osulloc_intro_img"
+                />
+              </div>
+              <div>
+                <img
+                  class="intro-img"
+                  src="https://img.sportsworldi.com/content/image/2016/01/05/20160105003896_0.jpg"
+                  alt="osulloc_intro_img"
+                />
+              </div>
+              <div>
+                <img
+                  class="intro-img"
+                  src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/since_image_1993.jpg"
+                  alt="osulloc_intro_img"
+                />
               </div>
             </div>
-          </section>
+          </div>
         </div>
+        <!-- 오설록 > 티뮤지엄 -->
         <div class="introBox">
-          <h3>오설록 티 뮤지엄</h3>
+          <p class="subtitle">오설록 티 뮤지엄의 탄생</p>
           <p class="introText">
-            1980년 한국 최초의 녹차 브랜드 '설록차'가 탄생하였습니다. 오설록은
-            더 나아가 전문적으로 티를 만드는 '티 메이커'라는 브랜드 위상에
-            주목하여 생산부터 수확까지 모든 스토리를 담은 '오설록 티 뮤지엄'을
-            탄생시켰습니다.
+            1980년 한국 최초의 녹차 브랜드 '설록차'를 만들고 나아가 전문적인 티
+            브랜드 이미지를 다지기 위하여 '티 메이커'라는 위상에 집중하기
+            시작했습니다.
+            <br /><br />그 결과,<br /><br />
+            2001년. 오설록은 찻잎의 생산부터 수확까지 우리나라의 제주에서
+            이루어진다는 모든 스토리와 차의 역사를 담은 '오설록 티 뮤지엄'을
+            탄생시켰으며 많은 사람들의 사랑을 받는 명소가 되었습니다.
           </p>
-          <img
-            class="intro-img"
-            src="https://a.cdn-hotels.com/gdcs/production125/d721/8f79af8b-eca2-4503-a335-df49ab07e097.jpg?impolicy=fcrop&w=1600&h=1066&q=medium"
-            alt="osulloc_intro_img"
-          />
-          <img
-            class="intro-img"
-            src="https://minio.nculture.org/amsweb-opt/multimedia_assets/191/85886/94443/c/%EC%98%A4%EC%84%A4%EB%A1%9D-%ED%8B%B0-%EB%AE%A4%EC%A7%80%EC%97%84-%284%29_rev-medium-size.jpg"
-            alt="osulloc_intro_img"
-          />
+          <!-- 오설록 > 티뮤지엄 > 이미지 -->
+          <div class="wrapper">
+            <div class="slider4">
+              <div>
+                <img
+                  class="intro-img"
+                  src="https://a.cdn-hotels.com/gdcs/production125/d721/8f79af8b-eca2-4503-a335-df49ab07e097.jpg?impolicy=fcrop&w=1600&h=1066&q=medium"
+                  alt="osulloc_intro_img"
+                />
+              </div>
+              <div>
+                <img
+                  class="intro-img"
+                  src="https://minio.nculture.org/amsweb-opt/multimedia_assets/191/85886/94443/c/%EC%98%A4%EC%84%A4%EB%A1%9D-%ED%8B%B0-%EB%AE%A4%EC%A7%80%EC%97%84-%284%29_rev-medium-size.jpg"
+                  alt="osulloc_intro_img"
+                />
+              </div>
+              <div>
+                <img
+                  class="intro-img"
+                  src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/since_image_05.jpg"
+                  alt="osulloc_intro_img"
+                />
+              </div>
+              <div>
+                <img
+                  class="intro-img"
+                  src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_tm1/osl_stdd_tm1_tab_1/osl_stdd_tm1_zone_3-1.jpg"
+                  alt="osulloc_intro_img"
+                />
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- 오설록 > 티하우스 -->
         <div class="introBox">
-          <h3>오설록 티 하우스,</h3>
+          <p class="subtitle">오설록 티 하우스</p>
           <p class="introText">
-            티 뮤지엄을 바탕으로 도시에서도 제주의 차를 즐길수 있는 '오설록 티
-            하우스'가 탄생하였습니다. 단 6개의 매장으로 각 매장마다 독립된
-            인테리어와 콘텐츠, 음료와 디저트를 맛보실 수 있습니다.
-            <br />우리나라 茶, 오설록을 함께 즐기러 가보실까요?
+            성공적인 티 뮤지엄을 바탕으로 차의 대중성과 차가 주는 편안함이라는 의미를 알리기 위해 도심 속에 티 전문 카페를 만들기로하였습니다.
+            <br /><br />
+            2005년, 오롯이 제주에서 나는 茶와 재료를 이용하여 만든 음료와
+            디저트를 선보일 공간, 차 한잔이 주는 편안함을 즐길 수 있는 공간<br />
+            '오설록 티 하우스'는 그렇게 도심에 자리하게 되었습니다.
           </p>
-          <img
-            class="intro-img"
-            src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_st/teahouse_haeundae.webp"
-            alt="osulloc_intro_img"
-          />
-          <img
-            class="intro-img"
-            src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_st/teahouse_1979.webp"
-            alt="osulloc_intro_img"
-          />
+          <!-- 티하우스 이미지 -->
+          <div class="wrapper">
+            <div class="slider4">
+              <div>
+                <img
+                  class="intro-img"
+                  src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_st/teahouse_haeundae.webp"
+                  alt="osulloc_intro_img"
+                />
+              </div>
+              <div>
+                <img
+                  class="intro-img"
+                  src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_st/teahouse_1979.webp"
+                  alt="osulloc_intro_img"
+                />
+              </div>
+              <div>
+                <img
+                  class="intro-img"
+                  src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_th1/osl_stdd_th1_3.jpg"
+                  alt="osulloc_intro_img"
+                />
+              </div>
+              <div>
+                <img
+                  class="intro-img"
+                  src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_th4/osl_stdd_th4_2-4.jpg"
+                  alt="osulloc_intro_img"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </article>
       <!-- SIGNATURE -->
-      <article id="signature">
-        <h1 class="h1">SIGNATURE</h1>
+      <article>
+        <p class="title">시그니처 메뉴</p>
         <!-- 시그니처 탭바 -->
         <div class="tab_content">
           <input type="radio" name="tabmenu" id="tab01" checked />
@@ -230,17 +306,15 @@
           </div>
         </div>
       </article>
+      <!-- 가까운 오설록 찾기 -->
+      <article id="findOsulloc">
+        <p class="title">가까운 오설록</p>
+        <p></p>
+      </article>
       <!-- ENJOY OSULLOC -->
       <article id="enjoy">
         <div>
-          <h2>enjoy osulloc</h2>
-          <p>오설록 즐기는 방법</p>
-        </div>
-      </article>
-      <article id="a4">
-        <div>
-          <h2>find osulloc</h2>
-          <p>오설록 찾기</p>
+          <p class="title">집에서도 즐기다</p>
         </div>
       </article>
     </section>

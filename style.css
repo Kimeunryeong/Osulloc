@@ -6,14 +6,16 @@
   /* font-family: "Noto Sans KR", sans-serif; */
   color: #2b1b17;
 }
+/* 전체 */
 body {
-  font-size: 1em;
   line-height: 1.5;
 }
 a {
   text-decoration: none;
 }
 
+
+/* 헤더 */
 .header {
   width: 100vw;
   height: 65px;
@@ -34,6 +36,7 @@ a {
 i {
   padding: 0 15px;
 }
+/* 네브바 */
 #nav_box {
   display: none;
 }
@@ -70,6 +73,7 @@ i {
   padding: 15px 0;
 }
 
+
 /*  section #main-video */
 #main-video {
   overflow: hidden;
@@ -104,6 +108,8 @@ i {
 #main-video p {
   margin: 0;
 }
+
+
 /* section #sulloc */
 #list {
   display: none;
@@ -125,31 +131,36 @@ i {
   width: 100vw;
 }
 /* #intro */
-.introBox {
+#findOsulloc, .introBox {
   text-align: center;
   width: 100%;
   margin: 100px auto;
   text-align: center;
   padding: 10px;
 }
-.h1 {
-  font-size: 28px;
+.title, .subtitle {
+  font-size: 36px;
   text-align: center;
+  font-weight: bold;
+  margin: 30px 0;
+}
+.subtitle {
+  font-size: 24px;
   font-weight: bold;
 }
 .introText {
-  margin-bottom: 50px;
+  margin-bottom: 70px;
   word-break: keep-all;
 }
 .intro-img {
   width: 95%;
+  height: 120px;
 }
 
 .story_link {
 }
 /* SIGNATURE */
-#signature {
-}
+
 .tab_content {
   margin: 30px auto;
   text-align: center;
