@@ -12,33 +12,31 @@
       href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap"
       rel="stylesheet"
     />
-
     <!-- bx슬라이더 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
-    <!-- 캐러셀 bx슬라이더 -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
     <style>
       /* bx슬라이더 */
       .bx-wrapper {
         border: 0;
         box-shadow: none;
+        margin: 0 auto;
       }
     </style>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
     <script>
       $(document).ready(function () {
         $(".slider4").bxSlider({
-          slideWidth: 200,
+          slideWidth: 300,
           minSlides: 2,
           maxSlides: 3,
           moveSlides: 1,
-          slideMargin: 10,
+          slideMargin: 5,
         });
       });
     </script>
@@ -97,17 +95,11 @@
         </div>
       </div>
     </section>
+
     <!-- 섹션2: 오설록 -->
     <section id="sulloc">
-      <!-- 웹 리스트 -->
-      <article id="list">
-        <p>오설록</p>
-        <p>시그니처 메뉴</p>
-        <p>오설록 즐기기</p>
-        <p>가까운 티하우스</p>
-      </article>
       <!-- 오설록 -->
-      <article>
+      <article id="introSulloc">
         <!-- 오설록 인트로 -->
         <div class="introBox">
           <p class="title">오설록을 아시나요?</p>
@@ -123,28 +115,28 @@
           <!-- 인트로-캐러셀 이미지 -->
           <div class="wrapper">
             <div class="slider4">
-              <div>
+              <div class="slide">
                 <img
                   class="intro-img"
                   src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/people_1.jpg"
                   alt="osulloc_intro_img"
                 />
               </div>
-              <div>
+              <div class="slide">
                 <img
                   class="intro-img"
                   src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/people_3.jpg"
                   alt="osulloc_intro_img"
                 />
               </div>
-              <div>
+              <div class="slide">
                 <img
                   class="intro-img"
                   src="https://img.sportsworldi.com/content/image/2016/01/05/20160105003896_0.jpg"
                   alt="osulloc_intro_img"
                 />
               </div>
-              <div>
+              <div class="slide">
                 <img
                   class="intro-img"
                   src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/since_image_1993.jpg"
@@ -167,36 +159,42 @@
             탄생시켰으며 많은 사람들의 사랑을 받는 명소가 되었습니다.
           </p>
           <!-- 오설록 > 티뮤지엄 > 이미지 -->
-          <div class="wrapper">
-            <div class="slider4">
-              <div>
-                <img
-                  class="intro-img"
-                  src="https://a.cdn-hotels.com/gdcs/production125/d721/8f79af8b-eca2-4503-a335-df49ab07e097.jpg?impolicy=fcrop&w=1600&h=1066&q=medium"
-                  alt="osulloc_intro_img"
-                />
-              </div>
-              <div>
-                <img
-                  class="intro-img"
-                  src="https://minio.nculture.org/amsweb-opt/multimedia_assets/191/85886/94443/c/%EC%98%A4%EC%84%A4%EB%A1%9D-%ED%8B%B0-%EB%AE%A4%EC%A7%80%EC%97%84-%284%29_rev-medium-size.jpg"
-                  alt="osulloc_intro_img"
-                />
-              </div>
-              <div>
-                <img
-                  class="intro-img"
-                  src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/since_image_05.jpg"
-                  alt="osulloc_intro_img"
-                />
-              </div>
-              <div>
-                <img
-                  class="intro-img"
-                  src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_tm1/osl_stdd_tm1_tab_1/osl_stdd_tm1_zone_3-1.jpg"
-                  alt="osulloc_intro_img"
-                />
-              </div>
+
+          <div class="slider4">
+            <div class="slide">
+              <img
+                class="intro-img"
+                src="https://a.cdn-hotels.com/gdcs/production125/d721/8f79af8b-eca2-4503-a335-df49ab07e097.jpg?impolicy=fcrop&w=1600&h=1066&q=medium"
+                alt="osulloc_intro_img"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="intro-img"
+                src="https://minio.nculture.org/amsweb-opt/multimedia_assets/191/85886/94443/c/%EC%98%A4%EC%84%A4%EB%A1%9D-%ED%8B%B0-%EB%AE%A4%EC%A7%80%EC%97%84-%284%29_rev-medium-size.jpg"
+                alt="osulloc_intro_img"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="intro-img"
+                src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/since_image_05.jpg"
+                alt="osulloc_intro_img"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="intro-img"
+                src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_tm1/osl_stdd_tm1_tab_1/osl_stdd_tm1_zone_3-1.jpg"
+                alt="osulloc_intro_img"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="intro-img"
+                src="/images/osl_stdd_tm1_zone_1-1.jpg"
+                alt="osulloc_intro_img"
+              />
             </div>
           </div>
         </div>
@@ -204,7 +202,8 @@
         <div class="introBox">
           <p class="subtitle">오설록 티 하우스</p>
           <p class="introText">
-            성공적인 티 뮤지엄을 바탕으로 차의 대중성과 차가 주는 편안함이라는 의미를 알리기 위해 도심 속에 티 전문 카페를 만들기로하였습니다.
+            성공적인 티 뮤지엄을 바탕으로 차의 대중성과 차가 주는 편안함이라는
+            의미를 알리기 위해 도심 속에 티 전문 카페를 만들기로하였습니다.
             <br /><br />
             2005년, 오롯이 제주에서 나는 茶와 재료를 이용하여 만든 음료와
             디저트를 선보일 공간, 차 한잔이 주는 편안함을 즐길 수 있는 공간<br />
@@ -213,28 +212,28 @@
           <!-- 티하우스 이미지 -->
           <div class="wrapper">
             <div class="slider4">
-              <div>
+              <div class="slide">
                 <img
                   class="intro-img"
                   src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_st/teahouse_haeundae.webp"
                   alt="osulloc_intro_img"
                 />
               </div>
-              <div>
+              <div class="slide">
                 <img
                   class="intro-img"
                   src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_st/teahouse_1979.webp"
                   alt="osulloc_intro_img"
                 />
               </div>
-              <div>
+              <div class="slide">
                 <img
                   class="intro-img"
                   src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_th1/osl_stdd_th1_3.jpg"
                   alt="osulloc_intro_img"
                 />
               </div>
-              <div>
+              <div class="slide">
                 <img
                   class="intro-img"
                   src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_th4/osl_stdd_th4_2-4.jpg"
@@ -245,7 +244,8 @@
           </div>
         </div>
       </article>
-      <!-- SIGNATURE -->
+
+      <!-- 시그니처 메뉴 -->
       <article>
         <p class="title">시그니처 메뉴</p>
         <!-- 시그니처 탭바 -->
@@ -258,6 +258,8 @@
           <label for="tab03">오프레도</label>
           <input type="radio" name="tabmenu" id="tab04" />
           <label for="tab04">프레쉬 한라봉 그린티</label>
+          <input type="radio" name="tabmenu" id="tab05" />
+          <label for="tab05">롤케익과 아이스크림</label>
 
           <div class="conbox sejac">
             <video src="images/sejac.mp4" controls></video>
@@ -304,48 +306,170 @@
               셔벗류의 시원한 음료로 프레쉬한 맛을 즐기실 수 있습니다.
             </p>
           </div>
+          <div class="conbox cake">
+            <img src="images/others.jpg" />
+            <p class="introText">
+              마스카포네 치즈크림이 샌딩된 오설록 대표 베이커리, 오설로 롤케익과
+              오설록 다원의 유기농 녹차/호지차가 진하게 들어간 대표
+              아이스크림입니다.
+            </p>
+          </div>
         </div>
       </article>
-      <!-- 가까운 오설록 찾기 -->
+
+      <!-- 가까운 오설록 -->
       <article id="findOsulloc">
-        <p class="title">가까운 오설록</p>
-        <p></p>
-      </article>
-      <!-- ENJOY OSULLOC -->
-      <article id="enjoy">
+        <!-- 문구 -->
         <div>
-          <p class="title">집에서도 즐기다</p>
+          <p class="title">가까운 오설록</p>
+          <p class="introText">
+            도심 속에서 편안한 쉼을 찾고 계신가요?<br />
+            나와 가까운 곳에서 차 한잔의 여유를 즐겨보세요.
+          </p>
+          <!-- 매장 이름 및 주소 -->
+          <div class="gallerylist">
+            <ul>
+              <li>
+                <a
+                  href="https://www.osulloc.com/kr/ko/store-introduction/haeundae"
+                >
+                  <div class="screen">
+                    <div class="top">오설록 해운대점</div>
+                    <div class="bottom">마우스 호버효과</div>
+                    <img
+                      src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_st/teahouse_yongsan.jpg"
+                    />
+                  </div>
+                  <div>
+                    <h3>오설록 티하우스 해운대점</h3>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.osulloc.com/kr/ko/store-introduction/174">
+                  <div class="screen">
+                    <div class="top">오설록 해운대점</div>
+                    <div class="bottom">마우스 호버효과</div>
+                    <img
+                      src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_st/teahouse_1979.jpg"
+                    />
+                  </div>
+                  <div>
+                    <h3>오설록 1979</h3>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.osulloc.com/kr/ko/store-introduction/312">
+                  <div class="screen">
+                    <div class="top">오설록 티하우스 해운대점</div>
+                    <div class="bottom">마우스 호버효과</div>
+                    <img src="images/teahouse_bukchon.png" />
+                  </div>
+                  <div>
+                    <h3>오설록 티하우스 북촌점</h3>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.osulloc.com/kr/ko/store-introduction/yongsan"
+                >
+                  <div class="screen">
+                    <div class="top">오설록 해운대점</div>
+                    <div class="bottom">마우스 호버효과</div>
+                    <img src="images/teahouse_park.webp" />
+                  </div>
+                  <div>
+                    <h3>오설록 티하우스 용산파크점</h3>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.osulloc.com/kr/ko/store-introduction/hannam"
+                >
+                  <div class="screen">
+                    <div class="top">오설록 해운대점</div>
+                    <div class="bottom">마우스 호버효과</div>
+                    <img
+                      src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_st/teahouse_hannam.jpg"
+                    />
+                  </div>
+                  <div>
+                    <h3>오설록 티하우스 한남점</h3>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.osulloc.com/kr/ko/store-introduction/mmca">
+                  <div class="screen">
+                    <div class="top">오설록 해운대점</div>
+                    <div class="bottom">마우스 호버효과</div>
+                    <img src="images/teahouse_mmca.jpg" />
+                  </div>
+                  <div>
+                    <h3>오설록 티하우스 MMCA</h3>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- 지도 -->
+          <div></div>
+        </div>
+      </article>
+
+      <!-- 집에서 즐기다 -->
+      <article id="enjoy">
+        <div class="introBox">
+          <p class="title">집에서 즐기다</p>
+          <p class="introText">
+            집에서 즐기는 차 한잔의 여유. 다양한 블렌딩 티로 특별한 자신만의
+            메뉴를 만들어보세요.
+          </p>
+          <div class="enjoyImg">
+            <img src="images/homemade.png" />
+            <p class="enjoyBtn">
+              <a href="https://www.osulloc.com/kr/ko/shop/item/list"
+                >제품 알아보기</a
+              >
+            </p>
+            <p class="enjoyBtn">
+              <a href="https://www.osulloc.com/kr/ko/tealog">레시피 알아보기</a>
+            </p>
+          </div>
         </div>
       </article>
     </section>
 
+    <!-- 푸터 -->
     <footer id="footer">
-      <div class="footer-t">
-        <input type="checkbox" id="house-scroll" />
-        <label for="house-scroll">오설록 티하우스 스크롤메뉴</label>
-        <div>
-          <a href="#">오설록 티하우스 해운대점</a>
-          <a href="#"></a>
-          <a href="#"></a>
-          <a href="#"></a>
-          <a href="#"></a>
+      <!-- 푸터 고객센터 -->
+      <div class="footerImg">
+        <img src="images/Osulloc_g_logo.png" width="40%" />
+      </div>
+      <div class="footerCs">
+        <div class="cs1">
+          <p>고객 상담센터</p>
+          <p>help@osulloc.com</p>
+          <p>080-505-5555</p>
+          <p>평일 09:30 ~ 1700</p>
+          <p>(점심11:30 ~ 13:00)</p>
         </div>
-        <p>오설록 티 샵 스크롤메뉴</p>
-        <div>
-          <a href="#"></a>
-          <a href="#"></a>
-          <a href="#"></a>
-          <a href="#"></a>
-          <a href="#"></a>
+        <div class="cs2">
+          <img
+            src="images/kakao-talk_3669973.png"
+            width="10%"
+            alt="kakao_icon"
+          />
+          <p>ID : osullocmall</p>
+          <p>평일 09:30 ~ 1700</p>
+          <p>점심 11:30 ~ 13:00</p>
         </div>
       </div>
       <hr />
-      <div>
-        <div>좌측 고객센터</div>
-        <div>우측 카카오톡 및 상담시간내용</div>
-      </div>
-      <hr />
-      <div>오설록 사이트 주소</div>
+      <address>Tea from JEJU, 당신의 삶에 쉼을 제공합니다.</address>
     </footer>
 
     <script src="script.js"></script>
