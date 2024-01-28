@@ -23,9 +23,9 @@
     <style>
       /* bx슬라이더 */
       .bx-wrapper {
-        border: 0;
-        box-shadow: none;
-        margin: 0 auto;
+        border: 0 !important;
+        box-shadow: none !important;
+        margin: 0 auto !important;
       }
     </style>
 
@@ -102,16 +102,15 @@
       <article id="introSulloc">
         <!-- 오설록 인트로 -->
         <div class="introBox">
-          <p class="title">오설록을 아시나요?</p>
-          <br />
-          <p class="introText">
-            <b>"우리나라 '茶'문화는 왜 없을까?"</b><br /><br />
-
-            세계 각지에서 차문화를 접한 한 남성의 의문에서 시작되었습니다.
-            <br /><br />
-            1979년, 제주도의 버려진 땅, 사람의 손 한번 닿지 않은 황무지 돌밭을
-            개간으로 시작해 차의 대중화를 위한 발돋움이 시작되었습니다.
-          </p>
+          <div class="title">오설록을 아시나요?</div>
+          <div class="introText">
+            <p class="subtitle">"우리나라 '茶'문화는 대중화되지 못했을까?"</p>
+            세계 각지에서 차문화를 접한 한 남성은 선조들도 즐겨마신 차가 왜
+            커피만큼 대중화되지 못한 것이가에 대해 의문을 가졌습니다.<br />
+            그는 주변의 만류에도 불구하고 1979년. 제주도의 버려진 땅, 사람의 손
+            한번 닿지 않은 황무지 돌밭을 개간으로 시작해 차의 대중화를 위한
+            사업을 시작하였습니다.
+          </div>
           <!-- 인트로-캐러셀 이미지 -->
           <div class="wrapper">
             <div class="slider4">
@@ -148,16 +147,16 @@
         </div>
         <!-- 오설록 > 티뮤지엄 -->
         <div class="introBox">
-          <p class="subtitle">오설록 티 뮤지엄의 탄생</p>
-          <p class="introText">
-            1980년 한국 최초의 녹차 브랜드 '설록차'를 만들고 나아가 전문적인 티
-            브랜드 이미지를 다지기 위하여 '티 메이커'라는 위상에 집중하기
-            시작했습니다.
-            <br /><br />그 결과,<br /><br />
-            2001년. 오설록은 찻잎의 생산부터 수확까지 우리나라의 제주에서
+          <div class="subtitle">오설록 티 뮤지엄의 탄생</div>
+          <div class="introText">
+            1980년 한국 최초의 녹차 브랜드 '설록차'가 탄생하였습니다. 하지만
+            한창 인스턴트 커피가 유명세를 떨치고 있었기에 차의 대중화는 쉽지
+            않았습니다.<br />
+            2001년. 마침내 설록차는 찻잎의 생산부터 수확까지 우리나라의 제주에서
             이루어진다는 모든 스토리와 차의 역사를 담은 '오설록 티 뮤지엄'을
-            탄생시켰으며 많은 사람들의 사랑을 받는 명소가 되었습니다.
-          </p>
+            탄생시켰습니다. 오설록 티 뮤지엄을 시작으로 많은 사람들이 '茶'에
+            관심을 기울이기 시작하였습니다.
+          </div>
           <!-- 오설록 > 티뮤지엄 > 이미지 -->
 
           <div class="slider4">
@@ -200,15 +199,14 @@
         </div>
         <!-- 오설록 > 티하우스 -->
         <div class="introBox">
-          <p class="subtitle">오설록 티 하우스</p>
-          <p class="introText">
-            성공적인 티 뮤지엄을 바탕으로 차의 대중성과 차가 주는 편안함이라는
-            의미를 알리기 위해 도심 속에 티 전문 카페를 만들기로하였습니다.
-            <br /><br />
-            2005년, 오롯이 제주에서 나는 茶와 재료를 이용하여 만든 음료와
-            디저트를 선보일 공간, 차 한잔이 주는 편안함을 즐길 수 있는 공간<br />
-            '오설록 티 하우스'는 그렇게 도심에 자리하게 되었습니다.
-          </p>
+          <div class="subtitle">오설록 티 하우스</div>
+          <div class="introText">
+            성공적인 티 뮤지엄을 바탕으로 설록차는 브랜드명을 오설록으로
+            변경하며 본격적인 차문화 알리기에 돌입하였습니다. 2005년, 오롯이
+            제주에서 나는 茶와 재료를 이용하여 만든 음료와 디저트를 선보일 공간,
+            차 한잔이 주는 편안함을 즐길 수 있는 공간, 오설록은 '오설록 티
+            하우스'와 함께 도심에 자리하게 되었습니다.
+          </div>
           <!-- 티하우스 이미지 -->
           <div class="wrapper">
             <div class="slider4">
@@ -246,7 +244,7 @@
       </article>
 
       <!-- 시그니처 메뉴 -->
-      <article>
+      <article id="signature">
         <p class="title">시그니처 메뉴</p>
         <!-- 시그니처 탭바 -->
         <div class="tab_content">
@@ -272,7 +270,8 @@
           <div class="conbox gtlt">
             <video
               src="images/latte.mp4"
-              autoplay muted
+              autoplay
+              muted
               controls
               id="video2"
             ></video>
@@ -285,7 +284,8 @@
           <div class="conbox ofrd">
             <video
               src="images/ofredo1.mp4"
-              autoplay muted
+              autoplay
+              muted
               controls
               id="video3"
             ></video>
@@ -298,7 +298,8 @@
           <div class="conbox fhgt">
             <video
               src="images/hallabong.mp4"
-              autoplay muted
+              autoplay
+              muted
               controls
               id="video4"
             ></video>
@@ -320,7 +321,7 @@
       <!-- 가까운 오설록 -->
       <article id="findOsulloc">
         <!-- 문구 -->
-        <div>
+        <div class="introBox">
           <p class="title">가까운 오설록</p>
           <p class="introText">
             도심 속에서 편안한 쉼을 찾고 계신가요?<br />
@@ -335,7 +336,10 @@
                 >
                   <div class="screen">
                     <div class="top">오설록 해운대점</div>
-                    <div class="bottom">마우스 호버효과</div>
+                    <div class="bottom">
+                      일상에서 벗어나 차의 본질에 집중하며 온전한 휴식을
+                      완성하는 공간
+                    </div>
                     <img
                       src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_st/teahouse_yongsan.jpg"
                     />
@@ -348,8 +352,10 @@
               <li>
                 <a href="https://www.osulloc.com/kr/ko/store-introduction/174">
                   <div class="screen">
-                    <div class="top">오설록 해운대점</div>
-                    <div class="bottom">마우스 호버효과</div>
+                    <div class="top">오설록 1979</div>
+                    <div class="bottom">
+                      브랜드의 격을 한 단계 끌어올린 오설록의 프리미엄 티룸
+                    </div>
                     <img
                       src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_st/teahouse_1979.jpg"
                     />
@@ -362,8 +368,10 @@
               <li>
                 <a href="https://www.osulloc.com/kr/ko/store-introduction/312">
                   <div class="screen">
-                    <div class="top">오설록 티하우스 해운대점</div>
-                    <div class="bottom">마우스 호버효과</div>
+                    <div class="top">오설록 티하우스 북촌점</div>
+                    <div class="bottom">
+                      차를 통해 새로운 감각과 취향을 보여주는 가치변화의 공간
+                    </div>
                     <img src="images/teahouse_bukchon.png" />
                   </div>
                   <div>
@@ -376,12 +384,12 @@
                   href="https://www.osulloc.com/kr/ko/store-introduction/yongsan"
                 >
                   <div class="screen">
-                    <div class="top">오설록 해운대점</div>
+                    <div class="top">오설록 티하우스 용산파크점</div>
                     <div class="bottom">마우스 호버효과</div>
                     <img src="images/teahouse_park.webp" />
                   </div>
                   <div>
-                    <h3>오설록 티하우스 용산파크점</h3>
+                    <h3>캐주얼하면서도 차에 대한 전문성을 담은 세련된 공간</h3>
                   </div>
                 </a>
               </li>
@@ -390,8 +398,11 @@
                   href="https://www.osulloc.com/kr/ko/store-introduction/hannam"
                 >
                   <div class="screen">
-                    <div class="top">오설록 해운대점</div>
-                    <div class="bottom">마우스 호버효과</div>
+                    <div class="top">오설록 티하우스 한남점</div>
+                    <div class="bottom">
+                      오설록과 페이스갤러리의 협업으로 탄생한 예술과 차 애호가를
+                      위한 차문화 복합 공간
+                    </div>
                     <img
                       src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_st/teahouse_hannam.jpg"
                     />
@@ -404,8 +415,10 @@
               <li>
                 <a href="https://www.osulloc.com/kr/ko/store-introduction/mmca">
                   <div class="screen">
-                    <div class="top">오설록 해운대점</div>
-                    <div class="bottom">마우스 호버효과</div>
+                    <div class="top">오설록 티하우스 MMCA</div>
+                    <div class="bottom">
+                      문화 예술을 함께하는 차문화 발견의 공간
+                    </div>
                     <img src="images/teahouse_mmca.jpg" />
                   </div>
                   <div>
@@ -443,9 +456,9 @@
       </article>
     </section>
 
-    <!-- 푸터 -->
+    <!-- footer -->
     <footer id="footer">
-      <!-- 푸터 고객센터 -->
+      <!--  고객센터 -->
       <div class="footerImg">
         <img src="images/Osulloc_g_logo.png" width="40%" />
       </div>
