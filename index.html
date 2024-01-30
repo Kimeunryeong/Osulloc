@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OSULLOC TEA HOUSE</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="style2.css" /> -->
     <!-- 폰트 적용 -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,9 +33,9 @@
     <script>
       $(document).ready(function () {
         $(".slider4").bxSlider({
-          slideWidth: 300,
+          slideWidth: 400,
           minSlides: 2,
-          maxSlides: 3,
+          maxSlides: 4,
           moveSlides: 1,
           slideMargin: 5,
         });
@@ -81,9 +82,11 @@
     <section id="main-video">
       <div class="video-wrapper">
         <iframe
-          src="https://player.vimeo.com/video/709357094?color=ffffff&title=0&byline=0&portrait=0&background=1&muted=1&autopause=1#t=0s"
+          src="https://player.vimeo.com/video/709357094?color=ffffff&title=0&byline=0&portrait=0&background==1&autopause=1#t=0s"
           frameborder="0"
           class="mo-video"
+          autoplay
+          muted
         ></iframe>
         <div class="video-text">
           <img src="images/Osulloc_g_logo.png" />
@@ -97,68 +100,70 @@
     </section>
 
     <!-- 섹션2: 오설록 -->
-    <section id="sulloc">
-      <!-- 오설록 -->
+    <section id="contents">
+      <!-- 오설록 인트로 -->
       <article id="introSulloc">
-        <!-- 오설록 인트로 -->
         <div class="introBox">
-          <div class="title">오설록을 아시나요?</div>
-          <div class="introText">
-            <p class="subtitle">"우리나라 '茶'문화는 대중화되지 못했을까?"</p>
-            세계 각지에서 차문화를 접한 한 남성은 선조들도 즐겨마신 차가 왜
-            커피만큼 대중화되지 못한 것이가에 대해 의문을 가졌습니다.<br />
-            그는 주변의 만류에도 불구하고 1979년. 제주도의 버려진 땅, 사람의 손
-            한번 닿지 않은 황무지 돌밭을 개간으로 시작해 차의 대중화를 위한
-            사업을 시작하였습니다.
+          <div class="text-box">
+            <div class="title">오설록</div>
+
+            <p class="subtitle">"우리나라 '茶'문화의 대중화를 위한 첫 시작"</p>
+            <p>
+              우리 나라 최초의 녹차 브랜드 설록차<br />
+              설록차는 우리나라 전통 차 문화를 알리기 위해 오설록이라는 이름으로
+              새로 탄생하였습니다.
+            </p>
           </div>
           <!-- 인트로-캐러셀 이미지 -->
-          <div class="wrapper">
-            <div class="slider4">
-              <div class="slide">
-                <img
-                  class="intro-img"
-                  src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/people_1.jpg"
-                  alt="osulloc_intro_img"
-                />
-              </div>
-              <div class="slide">
-                <img
-                  class="intro-img"
-                  src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/people_3.jpg"
-                  alt="osulloc_intro_img"
-                />
-              </div>
-              <div class="slide">
-                <img
-                  class="intro-img"
-                  src="https://img.sportsworldi.com/content/image/2016/01/05/20160105003896_0.jpg"
-                  alt="osulloc_intro_img"
-                />
-              </div>
-              <div class="slide">
-                <img
-                  class="intro-img"
-                  src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/since_image_1993.jpg"
-                  alt="osulloc_intro_img"
-                />
-              </div>
+          <div class="slider4">
+            <div class="slide">
+              <img
+                class="intro-img"
+                src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/people_1.jpg"
+                alt="osulloc_intro_img"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="intro-img"
+                src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/people_3.jpg"
+                alt="osulloc_intro_img"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="intro-img"
+                src="https://img.sportsworldi.com/content/image/2016/01/05/20160105003896_0.jpg"
+                alt="osulloc_intro_img"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="intro-img"
+                src="https://image.osulloc.com/kr/ko/static_cdj/others/image/brand/since_image_1993.jpg"
+                alt="osulloc_intro_img"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="intro-img"
+                src="/images/osl_stdd_tm1_zone_1-1.jpg"
+                alt="osulloc_intro_img"
+              />
             </div>
           </div>
         </div>
-        <!-- 오설록 > 티뮤지엄 -->
+        <!-- 오설록 티 하우스 -->
         <div class="introBox">
-          <div class="subtitle">오설록 티 뮤지엄의 탄생</div>
-          <div class="introText">
-            1980년 한국 최초의 녹차 브랜드 '설록차'가 탄생하였습니다. 하지만
-            한창 인스턴트 커피가 유명세를 떨치고 있었기에 차의 대중화는 쉽지
-            않았습니다.<br />
-            2001년. 마침내 설록차는 찻잎의 생산부터 수확까지 우리나라의 제주에서
-            이루어진다는 모든 스토리와 차의 역사를 담은 '오설록 티 뮤지엄'을
-            탄생시켰습니다. 오설록 티 뮤지엄을 시작으로 많은 사람들이 '茶'에
-            관심을 기울이기 시작하였습니다.
+          <div class="text-box">
+            <p class="subtitle">오설록 티 하우스</p>
+            <p>
+              우리나라 제주에서 직접 재배하고 수확한 차를 맛볼수 있는 공간. 차를
+              활용한 다양한 음료와 디저트를 맛 볼수 있으며 우리나라 전통 차
+              문화를 경험할 수 있는 공간입니다.
+            </p>
           </div>
-          <!-- 오설록 > 티뮤지엄 > 이미지 -->
-
+          <!-- 티하우스 캐러셀 -->
           <div class="slider4">
             <div class="slide">
               <img
@@ -191,53 +196,30 @@
             <div class="slide">
               <img
                 class="intro-img"
-                src="/images/osl_stdd_tm1_zone_1-1.jpg"
+                src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_st/teahouse_haeundae.webp"
                 alt="osulloc_intro_img"
               />
             </div>
-          </div>
-        </div>
-        <!-- 오설록 > 티하우스 -->
-        <div class="introBox">
-          <div class="subtitle">오설록 티 하우스</div>
-          <div class="introText">
-            성공적인 티 뮤지엄을 바탕으로 설록차는 브랜드명을 오설록으로
-            변경하며 본격적인 차문화 알리기에 돌입하였습니다. 2005년, 오롯이
-            제주에서 나는 茶와 재료를 이용하여 만든 음료와 디저트를 선보일 공간,
-            차 한잔이 주는 편안함을 즐길 수 있는 공간, 오설록은 '오설록 티
-            하우스'와 함께 도심에 자리하게 되었습니다.
-          </div>
-          <!-- 티하우스 이미지 -->
-          <div class="wrapper">
-            <div class="slider4">
-              <div class="slide">
-                <img
-                  class="intro-img"
-                  src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_st/teahouse_haeundae.webp"
-                  alt="osulloc_intro_img"
-                />
-              </div>
-              <div class="slide">
-                <img
-                  class="intro-img"
-                  src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_st/teahouse_1979.webp"
-                  alt="osulloc_intro_img"
-                />
-              </div>
-              <div class="slide">
-                <img
-                  class="intro-img"
-                  src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_th1/osl_stdd_th1_3.jpg"
-                  alt="osulloc_intro_img"
-                />
-              </div>
-              <div class="slide">
-                <img
-                  class="intro-img"
-                  src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_th4/osl_stdd_th4_2-4.jpg"
-                  alt="osulloc_intro_img"
-                />
-              </div>
+            <div class="slide">
+              <img
+                class="intro-img"
+                src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_st/teahouse_1979.webp"
+                alt="osulloc_intro_img"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="intro-img"
+                src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_th1/osl_stdd_th1_3.jpg"
+                alt="osulloc_intro_img"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="intro-img"
+                src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_th4/osl_stdd_th4_2-4.jpg"
+                alt="osulloc_intro_img"
+              />
             </div>
           </div>
         </div>
@@ -245,75 +227,64 @@
 
       <!-- 시그니처 메뉴 -->
       <article id="signature">
-        <p class="title">시그니처 메뉴</p>
-        <!-- 시그니처 탭바 -->
-        <div class="tab_content">
-          <input type="radio" name="tabmenu" id="tab01" checked />
-          <label for="tab01">세작</label>
-          <input type="radio" name="tabmenu" id="tab02" />
-          <label for="tab02">녹차라떼</label>
-          <input type="radio" name="tabmenu" id="tab03" />
-          <label for="tab03">오프레도</label>
-          <input type="radio" name="tabmenu" id="tab04" />
-          <label for="tab04">프레쉬 한라봉 그린티</label>
-          <input type="radio" name="tabmenu" id="tab05" />
-          <label for="tab05">롤케익과 아이스크림</label>
+        <div class="introBox">
+          <div class="text-box">
+            <p class="title">시그니처 메뉴</p>
+            <p class="subtitle">
+              오직 오설록에서만 즐길 수 있는 제주내음 가득한 메뉴들을
+              즐겨보세요.
+            </p>
+          </div>
+          <!-- 시그니처 탭바 -->
+          <div class="tab_content">
+            <input type="radio" name="tabmenu" id="tab01" checked />
+            <label for="tab01">세작</label>
+            <input type="radio" name="tabmenu" id="tab02" />
+            <label for="tab02">녹차라떼</label>
+            <input type="radio" name="tabmenu" id="tab03" />
+            <label for="tab03">오프레도</label>
+            <input type="radio" name="tabmenu" id="tab04" />
+            <label for="tab04">프레쉬 한라봉 그린티</label>
+            <input type="radio" name="tabmenu" id="tab05" />
+            <label for="tab05">롤케익과 아이스크림</label>
 
-          <div class="conbox sejac">
-            <video src="images/sejac.mp4" autoplay muted controls></video>
-            <p class="introText">
-              어린 찻잎을 재배하여 덖은 차, 세작은 풍부한 아미노산과 부드러운
-              끝맛으로 오설록의 시그니처 메뉴로 자리잡았습니다.
-            </p>
-          </div>
-          <!-- 녹차라떼 -->
-          <div class="conbox gtlt">
-            <video
-              src="images/latte.mp4"
-              autoplay
-              muted
-              controls
-              id="video2"
-            ></video>
-            <p class="introText">
-              오설록 녹차라떼는 가루 진 녹차를 이용하여 진하고 쌉싸름한 맛을
-              부드럽게 즐기는 분들이 선호하는 메뉴입니다.
-            </p>
-          </div>
-          <!-- 오프레도 -->
-          <div class="conbox ofrd">
-            <video
-              src="images/ofredo1.mp4"
-              autoplay
-              muted
-              controls
-              id="video3"
-            ></video>
-            <p class="introText">
-              제주에서 나고 자란 재료로 만든 아이스크림과 부드러운 밀크 쉐이크의
-              조화로 많은 분들께 사랑받는 쉐이크 메뉴입니다.
-            </p>
-          </div>
-          <!--프레시 한라봉 그린티 -->
-          <div class="conbox fhgt">
-            <video
-              src="images/hallabong.mp4"
-              autoplay
-              muted
-              controls
-              id="video4"
-            ></video>
-            <p class="introText">
-              시원한 녹차 셔벗 위로 한라봉 셔벗이 어우러져 프레쉬한 맛을 즐기실 수 있는 아이스 음료입니다.
-            </p>
-          </div>
-          <div class="conbox cake">
-            <img src="images/others.jpg" />
-            <p class="introText">
-              마스카포네 치즈크림이 샌딩된 오설록 대표 베이커리, 오설로 롤케익과
-              오설록 다원의 유기농 녹차/호지차가 진하게 들어간 대표
-              아이스크림입니다.
-            </p>
+            <!-- 세작 -->
+            <div class="fortab">
+              <div class="conbox sejac">
+                <video src="images/sejac.mp4" controls></video>
+                <p>어린 찻잎을 재배하여 덖은 차. 떫지않은 부드러운 맛으로 오설록에서 가장 사랑받는 녹차.</p>
+              </div>
+
+              <!-- 녹차라떼 -->
+              <div class="conbox gtlt">
+                <video src="images/latte.mp4" controls></video>
+                <p>
+                  곱고 진한 녹차가루, 가루 진(眞)을 이용해 기분좋은 쌉싸름한
+                  맛과 달콤함을 더해 부드럽게 즐길 수 있는 녹차라떼
+                </p>
+              </div>
+              <!-- 오프레도 -->
+              <div class="conbox ofrd">
+                <video src="images/ofredo1.mp4" controls></video>
+                <p>녹차, 한라봉 등의 다양한 재료를 얼음과 함께 갈아 넣은 쉐이크에
+                  부드러운 아이스크림 토핑을 얹어 달콤하게 즐기는
+                  오설록 대표 아이스 음료</p>
+              </div>
+              <!--프레시 한라봉 그린티 -->
+              <div class="conbox fhgt">
+                <video src="images/hallabong.mp4" controls></video>
+                <p>
+                  오설록 제주 차밭의 유기농 티 베이스의 아이스 음료
+                </p>
+              </div>
+              <div class="conbox cake">
+                <img src="images/others.jpg" />
+                <p>
+                  묵직하면서 푹신한 시트에 마스카포네 치즈크림이 샌딩된 오설록 대표 베이커리와 오설록 다원의 유기농 녹차/호지차가 진하게 들어간
+                  오설록 대표 아이스크림
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </article>
@@ -323,7 +294,7 @@
         <!-- 문구 -->
         <div class="introBox">
           <p class="title">가까운 오설록</p>
-          <p class="introText">
+          <p class="text-box">
             도심 속에서 편안한 쉼을 찾고 계신가요?<br />
             나와 가까운 곳에서 차 한잔의 여유를 즐겨보세요.
           </p>
@@ -437,7 +408,7 @@
       <article id="enjoy">
         <div class="introBox">
           <p class="title">집에서 즐기다</p>
-          <p class="introText">
+          <p class="text-box">
             집에서 즐기는 차 한잔의 여유. 다양한 블렌딩 티로 특별한 자신만의
             메뉴를 만들어보세요.
           </p>
