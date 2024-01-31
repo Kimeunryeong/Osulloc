@@ -5,7 +5,9 @@ let introEff = document.querySelector(".web-textBox");
 window.addEventListener("scroll", function () {
   let value = window.scrollY;
   console.log("scrollY", value);
-
+    // value <668 0
+    // value > 668 1 
+    
   if (value >= 300 && value <= 1100) {
     introEff.style.animation = "slide 1s ease-in-out forwards";
   } else if (value < 299 || value > 1111) {
