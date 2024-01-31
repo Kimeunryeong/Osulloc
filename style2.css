@@ -473,13 +473,6 @@ ul > li > a .screen img {
     opacity: 0;
     left: -400px;
   }
-  .web-textBox2 {
-    width: 500px;
-    font-weight: 400;
-    position: relative;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-  }
   @keyframes slide {
     from {
       left: -400px;
@@ -500,6 +493,14 @@ ul > li > a .screen img {
       opacity: 0;
     }
   }
+  .web-textBox2 {
+    width: 500px;
+    font-weight: 400;
+    position: relative;
+    /* opacity: 0;
+    transition: opacity 1s ease-in-out; */
+  }
+
   .web-bg .title {
     line-height: 1.6;
     position: relative;
