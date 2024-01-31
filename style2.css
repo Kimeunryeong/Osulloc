@@ -144,7 +144,7 @@ i {
 .video-thumbnail img {
   opacity: 0.97;
   z-index: 1;
-  /* max-width: none; */
+  max-width: none;
   max-width: initial;
   top: 0;
 }
@@ -510,7 +510,9 @@ ul > li > a .screen img {
     margin-bottom: 40px;
     word-break: keep-all;
   }
-
+  .mo-thumbnail {
+    display: none;
+  }
   /* 가까운 오설록 */
   ul > li > a .screen .top {
     display: block;
@@ -567,10 +569,10 @@ ul > li > a .screen img {
   .enjoyImg img {
     width: 100%;
   }
-  #enjoy {
+  /* #enjoy {
     opacity: 0;
     transition: opacity 0.35s;
-  }
+  } */
   /* footer */
   #footer {
     width: 100vw;
