@@ -29,14 +29,14 @@ window.addEventListener("scroll", function () {
 
 
 // 인조이 오설록
-let enjoySection = document.getElementById("enjoy");
+// let enjoySection = document.getElementById("enjoy");
 
-window.addEventListener("scroll", function () {
-  let scrollPosition1 = window.scrollY;
+// window.addEventListener("scroll", function () {
+//   let scrollPosition1 = window.scrollY;
 
-  if (scrollPosition1 < 6500) {
-    enjoySection.style.opacity = 0;
-  } else {
-    enjoySection.style.opacity = 1;
-  }
-});
+//   if (scrollPosition1 < 6500) {
+//     enjoySection.style.opacity = 0;
+//   } else {
+//     enjoySection.style.opacity = 1;
+//   }
+// });

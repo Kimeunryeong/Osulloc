@@ -38,7 +38,7 @@ body {
   position: fixed;
   width: 100vw;
   order: 5;
-  
+  z-index: 9999999999;
 }
 
 .header nav {
@@ -322,8 +322,7 @@ ul > li > a .screen img {
 
 /* enjoy osulloc */
 #enjoy {
-  opacity: 0;
-  transition: opacity 0.35s;
+  opacity: 1;
 }
 .enjoyImg {
   display: flex;
@@ -568,7 +567,10 @@ ul > li > a .screen img {
   .enjoyImg img {
     width: 100%;
   }
-
+  #enjoy {
+    opacity: 0;
+    transition: opacity 0.35s;
+  }
   /* footer */
   #footer {
     width: 100vw;
