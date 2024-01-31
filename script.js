@@ -1,15 +1,42 @@
-// function updateCheckedState() {
-//   let radioBtn = document.getElementById('tab01');
-  
-//   if (window.innerWidth >= 768) {
-//     // 창 너비가 768px 이상인 경우, checked 속성 제거
-//     radioBtn.removeAttribute('checked');
-//   } else {
-//     // 창 너비가 768px 미만인 경우, checked 속성 추가
-//     radioBtn.setAttribute('checked', 'checked');
-//   }
-// }
-// // 페이지 로딩 시 초기 확인
-// updateCheckedState();
-// // 창 크기 변경 이벤트에 대한 추가
-// window.addEventListener('resize', updateCheckedState);
+
+// 오설록 인트로 슬라이드 함수
+let introEff = document.querySelector(".web-textBox");
+
+window.addEventListener("scroll", function () {
+  let value = window.scrollY;
+  console.log("scrollY", value);
+
+  if (value >= 300 && value <= 1100) {
+    introEff.style.animation = "slide 2s ease-in-out forwards";
+  } else if (value < 299 || value > 1111) {
+    introEff.style.animation = "disappear 2s ease-in-out forwards";
+  }
+});
+
+// 티하우스 오퍼시티 함수
+let textBox2 = document.querySelector(".web-textBox2");
+
+window.addEventListener("scroll", function () {
+  let scrollPosition = window.scrollY;
+  console.log("scrollY", scrollPosition);
+
+  if (scrollPosition >= 1730 && scrollPosition < 2650) {
+    textBox2.style.opacity = 1;
+  } else {
+    textBox2.style.opacity = 0;
+  }
+});
+
+
+// 인조이 오설록
+let enjoySection = document.getElementById("enjoy");
+
+window.addEventListener("scroll", function () {
+  let scrollPosition1 = window.scrollY;
+
+  if (scrollPosition1 < 6500) {
+    enjoySection.style.opacity = 0;
+  } else {
+    enjoySection.style.opacity = 1;
+  }
+});

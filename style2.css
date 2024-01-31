@@ -29,8 +29,9 @@ a {
   display: flex;
   justify-content: space-between;
   padding: 0 10px;
-  background-color: #434343;
+  background-color: #505051;
 }
+
 .header nav {
   display: flex;
   justify-content: center;
@@ -50,7 +51,7 @@ i {
 #nav_list {
   width: 200px;
   height: 100%;
-  background: #434343;
+  background: #505051;
   position: fixed;
   right: -200px;
   transition: all 0.35s;
@@ -161,11 +162,12 @@ iframe {
   margin: 0 auto;
   background: #fff;
 }
-/* #introSulloc */
+/* 2. #introSulloc */
 
 .introBox {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin: 0 auto;
   padding: 50px 0;
@@ -178,13 +180,24 @@ iframe {
   margin-bottom: 70px;
 }
 .subtitle {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
   margin-bottom: 50px;
 }
 .text-box {
   word-break: keep-all;
   margin: 30px 20px;
+}
+.web-textBox {
+  animation: fadeIn 2s ease-in-out;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .intro-img {
   height: 30vh;
@@ -193,7 +206,7 @@ iframe {
 
 /* 시그니처 메뉴 */
 #signature {
-  background: #434343;
+  background: #505051;
 }
 #signature * {
   color: #dfd8c7;
@@ -204,7 +217,7 @@ iframe {
 }
 .conbox {
   display: none;
-  width: 300px;
+  width: 350px;
   height: 550px;
 }
 .conbox img {
@@ -217,8 +230,9 @@ input[type="radio"] {
 input[type="radio"] + label {
   display: inline-block;
   padding: 10px;
-  color: #434343;
+  color: #505051;
   cursor: pointer;
+  transition: font-weight 0.3s ease
 }
 input[type="radio"]:checked + label {
   font-weight: bold;
@@ -230,6 +244,15 @@ input[type="radio"]:checked + label {
 #tab04:checked ~ .fortab .fhgt,
 #tab05:checked ~ .fortab .cake {
   display: inline-block;
+  animation: fadeIn 2.5s ease;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .fortab {
   display: flex;
@@ -238,7 +261,9 @@ input[type="radio"]:checked + label {
   margin: 0 auto;
   align-items: center;
 }
-.fortab video,
+.fortab video {
+  width: 60%;
+}
 .fortab img {
   width: 100%;
 }
@@ -285,14 +310,19 @@ ul > li > a .screen img {
   width: 100%;
 }
 
+
 /* enjoy osulloc */
+#enjoy {
+  opacity: 0;
+  transition: opacity 0.35s;
+}
 .enjoyImg {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 .enjoyImg img {
-  width: 100vw;
+  width: 100%;
   height: 40vh;
   margin-bottom: 50px;
 }
@@ -301,33 +331,59 @@ ul > li > a .screen img {
   width: 140px;
   padding: 10px;
   margin: 10px;
-  background: #434343;
+  background: #dfd8c7;
   font-weight: bold;
   border-radius: 15px;
+  a {
+    color:#505051
+  }
 }
 
 /* footer */
 #footer {
-  background: #434343;
-  color: #dfd8c7;
+  display: flex;
+  flex-direction: column;
+  background: #dfd8c7;
+  text-align: left;
+  color: #505050;
   padding: 10px;
+  font-size: 1rem;
 }
-.footerImg {
-  text-align: center;
+.footerinfo {
+  display: none;
+  padding: 15px;
 }
 
-.cs1,
-.cs2 {
-  margin-bottom: 30px;
-  font-size: small;
+.footerCs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1.5rem 0 3rem;
+  border-bottom: 0.1rem solid rgba(221, 221, 221, 0.5);
 }
-.cs1 p:nth-child(1),
-.cs1 p:nth-child(3),
-.cs1 p:nth-child(4),
-.cs2 p:nth-child(2),
-.cs2 p:nth-child(3) {
+.footerCs a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.4rem;
+  padding: 0 0.8rem;
   font-weight: 600;
-  font-size: large;
+  letter-spacing: 0.01em;
+  color: #505051;
+  border: 0.1rem solid #505051;
+  border-radius: 0.1rem;
+}
+.navLower {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.navLower a {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 500;
+  line-height: 1.4rem;
+  letter-spacing: 0;
+  color: #505051;
 }
 
 /* 미디어 쿼리 적용 */
@@ -373,6 +429,78 @@ ul > li > a .screen img {
   .fortab video {
     width: 100%;
     height: 90%;
+  }
+  .cake {
+    width: 500px;
+  }
+  .conbox {
+    margin: 50px;
+  }
+
+  /* 섹션2: 콘텐츠 */
+  /* 인트로 설록 */
+  #introSulloc {
+    padding: 0;
+  }
+  .web-bg {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.6)
+      ),
+      url("images/tea_field_item_2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+  }
+  .web-bg2 {
+    height: 100vh;
+  }
+  .web-textBox {
+    width: 500px;
+    color: #dfd8c7;
+    font-weight: 400;
+    position: relative;
+    opacity: 0;
+    left: -400px;
+  }
+  .web-textBox2 {
+    width: 500px;
+    font-weight: 400;
+    position: relative;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  @keyframes slide {
+    from {
+      left: -400px;
+      opacity: 0;
+    }
+    to {
+      left: 0px;
+      opacity: 1;
+    }
+  }
+  @keyframes disappear {
+    from {
+      left: 0px;
+      opacity: 1;
+    }
+    to {
+      left: -400px;
+      opacity: 0;
+    }
+  }
+  .web-bg .title {
+    line-height: 1.6;
+    position: relative;
+    font-size: 32px;
+  }
+
+  .web-textBox p {
+    margin-bottom: 40px;
+    word-break: keep-all;
   }
 
   /* 가까운 오설록 */
@@ -423,6 +551,9 @@ ul > li > a .screen img {
   ul > li > a:hover .screen::after {
     opacity: 1;
   }
+  .gallerylist {
+    width: 80%;
+  }
 
   /* 집에서 즐기다 */
   .enjoyImg img {
@@ -431,26 +562,24 @@ ul > li > a .screen img {
 
   /* footer */
   #footer {
-    display: flex;
-    justify-content: center;
+    width: 100vw;
     align-items: center;
-    height: 300px;
   }
-  .footerCs {
+  .footer {
+    width: 1400px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    align-content: center;
+    flex-direction: row;
     justify-content: center;
   }
-  .cs1,
-  .cs2 {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+
+  .footer-logo img {
+    width: 20%;
   }
-  .footerImg {
-    width: 30%;
+  .footerinfo {
+    display: block;
+    font-size: 12px;
   }
 }

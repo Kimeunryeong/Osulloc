@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Gowun Dodum", sans-serif;
+  overflow: hidden;
 }
 /* 전체 */
 a {

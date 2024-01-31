@@ -28,17 +28,18 @@
         border: 0 !important;
         box-shadow: none !important;
         margin: 0 auto !important;
+        background: none !important;
       }
     </style>
 
     <script>
       $(document).ready(function () {
         $(".slider4").bxSlider({
-          slideWidth: 350,
+          slideWidth: 300,
           minSlides: 2,
           maxSlides: 4,
           moveSlides: 1,
-          slideMargin: 5,
+          slideMargin: 10,
         });
       });
     </script>
@@ -107,15 +108,14 @@
     <section id="contents">
       <!-- 오설록 인트로 -->
       <article id="introSulloc">
-        <div class="introBox ">
-          <div class="text-box">
+        <div class="introBox web-bg">
+          <div class="text-box web-textBox">
             <div class="title">오설록</div>
-
-            <p class="subtitle">"우리나라 '茶'문화의 대중화를 위한 첫 시작"</p>
+            <p><b>"우리나라 '茶'문화의 첫 시작"</b></p>
             <p>
-              우리 나라 최초의 녹차 브랜드 설록차<br />
-              설록차는 우리나라 전통 차 문화를 알리기 위해 오설록이라는 이름으로
-              새로 탄생하였습니다.
+              우리나라 최초의 전통 차 브랜드 오설록 황무지였던 제주의 땅에서
+              차밭을 일궈 직접 키우고 재배한 차를 즐길 수 있게 전통적인 차를
+              현대적인 이미지로 재해석한 브랜드입니다.
             </p>
           </div>
           <!-- 인트로-캐러셀 이미지 -->
@@ -165,8 +165,8 @@
           </div>
         </div>
         <!-- 오설록 티 하우스 -->
-        <div class="introBox">
-          <div class="text-box">
+        <div class="introBox web-bg2">
+          <div class="text-box web-textBox2">
             <p class="subtitle">오설록 티 하우스</p>
             <p>
               우리나라 제주에서 직접 재배하고 수확한 차를 맛볼수 있는 공간. 차를
@@ -445,30 +445,56 @@
     <!-- footer -->
     <footer id="footer">
       <!--  고객센터 -->
-      <div class="footerImg">
-        <img src="images/Osulloc_g_logo.png" width="40%" />
-      </div>
-      <div class="footerCs">
-        <div class="cs1">
-          <p>고객 상담센터</p>
-          <p>help@osulloc.com</p>
-          <p>080-505-5555</p>
-          <p>평일 09:30 ~ 1700</p>
-          <p>(점심11:30 ~ 13:00)</p>
+      <div class="footer">
+        <div class="footer-logo">
+          <img src="images/Osulloc_english_logo.png" width="30%" />
         </div>
-        <div class="cs2">
-          <img
-            src="images/kakao-talk_3669973.png"
-            width="10%"
-            alt="kakao_icon"
-          />
-          <p>ID : osullocmall</p>
-          <p>평일 09:30 ~ 1700</p>
-          <p>점심 11:30 ~ 13:00</p>
+        <div class="footerinfo">
+          <div class="txt_wrap">
+            <p>
+              ㈜ 오설록 <br />
+              대표이사 : 서혁제
+              <br />주소 : 서울 특별시 용산구 한강대로 100 (한강로2가)
+              <br />사업자 등록번호 : 390-87-01499 <br />통신판매업신고번호 :
+              2019-서울용산-1173호 <br />호스팅제공자 : ㈜오설록
+            </p>
+            <p>
+              (주)오설록은 오설록 브랜드를 제외한 입점 브랜드에 대해서는
+              통신판매중개자 이며 통신판매의 당사자가 아닙니다. <br />따라서
+              입점판매자가 등록한 상품정보 및 거래에 대해 책임을 지지 않습니다.
+            </p>
+            <p>
+              NHN KCP 구매안전(에스크로)서비스 <br />
+              고객님의 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에 가입한
+              NHN KCP의 구매안전서비스를 이용하실 수 있습니다.
+            </p>
+          </div>
         </div>
+        <div class="footerCs">
+          <a href="#"><span>TEA FROM JEJU</span></a>
+          <a href="#"><span>KAKAO ID:osullocmall</span></a>
+
+          <a href="#"><span>help@osulloc.com</span></a>
+          <!-- 이 부분이 누락되었습니다 -->
+
+          <a href="https://www.instagram.com/osulloc_official/"
+            ><i class="fa-brands fa-instagram fa-xl" style="color: #505051"></i
+          ></a>
+          <a href="https://www.youtube.com/channel/UC27q_WWuOkdyNIr7M_6trvA"
+            ><i class="fa-brands fa-youtube fa-xl" style="color: #505051"></i
+          ></a>
+
+          <a href="#"><span>고객센터 : 080-505-5555 (수신자요금부담)</span></a>
+        </div>
+        <nav class="navLower">
+          <a href="#"><span>이용약관</span></a>
+          <a href="#"><span>개인정보처리방침</span></a>
+          <a href="#"><span>영상기기관리방침</span></a>
+          <a href="#">위치기반서비스 이용약관</a>
+          <a href="#"><span>사업자정보확인</span></a>
+          <a href="#"><span>약관및법적고지확인</span></a>
+        </nav>
       </div>
-      <hr />
-      <address>Tea from JEJU, 당신의 삶에 쉼을 제공합니다.</address>
     </footer>
 
     <script src="script.js"></script>
