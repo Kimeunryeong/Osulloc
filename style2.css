@@ -1,14 +1,14 @@
+/* 전체 */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Gowun Dodum", sans-serif;
 }
-/* 전체 */
 a {
   text-decoration: none;
 }
-/* 공통css적용 */
+/* 각 아티클 공통적용 코드 */
 #introSulloc,
 #signature,
 #findOsulloc,
@@ -25,9 +25,9 @@ a {
 
 /* 헤더 */
 body {
-  position: relative;
-  display: flex;
-  flex-direction: column;
+  /* position: relative; */
+  /* display: flex;
+  flex-direction: column; */
 }
 .header {
   height: 65px;
@@ -37,7 +37,6 @@ body {
   background-color: #373430;
   position: fixed;
   width: 100vw;
-  order: 5;
   z-index: 9999999999;
 }
 
@@ -107,7 +106,7 @@ i {
   left: 0;
   z-index: -1;
   overflow: hidden;
-  max-width: 100%;
+  max-width: 100vw;
 }
 .video-title {
   margin-top: -10vh;
@@ -160,7 +159,7 @@ iframe {
   height: 120vh;
   top: -5px;
   left: 50%;
-  width: 100%;
+  /* width: 100%; */
   height: 100%;
   transform: translate(-50%, 0);
 }
@@ -510,9 +509,6 @@ ul > li > a .screen img {
   .web-textBox p {
     margin-bottom: 40px;
     word-break: keep-all;
-  }
-  .mo-thumbnail {
-    display: none;
   }
   /* 가까운 오설록 */
   ul > li > a .screen .top {

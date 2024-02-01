@@ -1,4 +1,3 @@
-
 // 오설록 인트로 슬라이드 함수
 let introEff = document.querySelector(".web-textBox");
 
@@ -8,12 +7,36 @@ window.addEventListener("scroll", function () {
     // value <668 0
     // value > 668 1 
     
-  if (value >= 300 && value <= 1100) {
+  if (value >= 300 && value <= 1300) {
     introEff.style.animation = "slide 1s ease-in-out forwards";
-  } else if (value < 299 || value > 1111) {
+  } else if (value < 299 || value > 1400) {
     introEff.style.animation = "disappear 1s ease-in-out forwards";
   }
 });
+
+
+
+
+
+
+// // 데스크톱 환경에서 실행될 이벤트 리스너 함수
+// function desktopScrollHandler() {
+//   console.log('데스크톱 스크롤 위치:', window.scrollY);
+//   // 데스크톱 환경에 맞는 스크롤 효과 코드 추가
+// }
+
+// // 모바일 환경에서 실행될 이벤트 리스너 함수
+// function mobileScrollHandler() {
+//   console.log('모바일 스크롤 위치:', window.scrollY);
+//   // 모바일 환경에 맞는 스크롤 효과 코드 추가
+// }
+
+// // 뷰포트 너비에 따라 적절한 이벤트 리스너 함수를 할당
+// if (window.innerWidth >= 768) {
+//   window.addEventListener('scroll', desktopScrollHandler);
+// } else {
+//   window.addEventListener('scroll', mobileScrollHandler);
+// }
 
 // // 티하우스 오퍼시티 함수
 // let textBox2 = document.querySelector(".web-textBox2");
