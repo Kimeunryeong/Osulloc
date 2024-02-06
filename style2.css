@@ -24,11 +24,7 @@ a {
 }
 
 /* 헤더 */
-body {
-  /* position: relative; */
-  /* display: flex;
-  flex-direction: column; */
-}
+
 .header {
   height: 65px;
   display: flex;
@@ -69,7 +65,7 @@ i {
   padding: 15px;
 }
 #nav_list a {
-  color: #E5E0D2;
+  color: #e5e0d2;
 }
 #nav_box:checked + #nav_icon + #nav_list {
   right: 0;
@@ -180,6 +176,8 @@ iframe {
   margin: 0 auto;
   padding: 50px 0;
   text-align: center;
+  opacity: 0;
+  transition: all 2s;
 }
 .title {
   font-size: 40px;
@@ -196,17 +194,7 @@ iframe {
   word-break: keep-all;
   margin: 30px 20px;
 }
-.web-textBox {
-  animation: fadeIn 2s ease-in-out;
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+
 .intro-img {
   height: 30vh;
   width: 100%;
@@ -217,8 +205,9 @@ iframe {
   background: #373430;
 }
 #signature * {
-  color: #E5E0D2;
+  color: #e5e0d2;
 }
+
 .tab_content {
   margin: 30px auto;
   text-align: center;
@@ -240,7 +229,7 @@ input[type="radio"] + label {
   padding: 10px;
   color: #373430;
   cursor: pointer;
-  transition: font-weight 0.3s ease
+  transition: font-weight 0.3s ease;
 }
 input[type="radio"]:checked + label {
   font-weight: bold;
@@ -253,14 +242,6 @@ input[type="radio"]:checked + label {
 #tab05:checked ~ .fortab .cake {
   display: inline-block;
   animation: fadeIn 2.5s ease;
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 .fortab {
   display: flex;
@@ -318,11 +299,8 @@ ul > li > a .screen img {
   width: 100%;
 }
 
-
 /* enjoy osulloc */
-#enjoy {
-  opacity: 1;
-}
+
 .enjoyImg {
   display: flex;
   flex-wrap: wrap;
@@ -338,11 +316,11 @@ ul > li > a .screen img {
   width: 140px;
   padding: 10px;
   margin: 10px;
-  background: #E5E0D2;
+  background: #e5e0d2;
   font-weight: bold;
   border-radius: 15px;
   a {
-    color:#373430
+    color: #373430;
   }
 }
 
@@ -350,7 +328,7 @@ ul > li > a .screen img {
 #footer {
   display: flex;
   flex-direction: column;
-  background: #E5E0D2;
+  background: #e5e0d2;
   text-align: left;
   color: #505050;
   padding: 10px;
@@ -414,7 +392,7 @@ ul > li > a .screen img {
     z-index: 0;
   }
   #nav_list a {
-    color: #E5E0D2;
+    color: #e5e0d2;
   }
   #nav_list p,
   #nav_list p a {
@@ -461,43 +439,22 @@ ul > li > a .screen img {
     height: 100vh;
     position: relative;
   }
+
   .web-bg2 {
     height: 100vh;
   }
+
   .web-textBox {
     width: 500px;
-    color: #E5E0D2;
+    color: #e5e0d2;
     font-weight: 400;
     position: relative;
-    opacity: 0;
-    left: -400px;
   }
-  @keyframes slide {
-    from {
-      left: -400px;
-      opacity: 0;
-    }
-    to {
-      left: 0px;
-      opacity: 1;
-    }
-  }
-  @keyframes disappear {
-    from {
-      left: 0px;
-      opacity: 1;
-    }
-    to {
-      left: -400px;
-      opacity: 0;
-    }
-  }
+
   .web-textBox2 {
     width: 500px;
     font-weight: 400;
     position: relative;
-    /* opacity: 0;
-    transition: opacity 1s ease-in-out; */
   }
 
   .web-bg .title {
@@ -510,6 +467,7 @@ ul > li > a .screen img {
     margin-bottom: 40px;
     word-break: keep-all;
   }
+  */
   /* 가까운 오설록 */
   ul > li > a .screen .top {
     display: block;
