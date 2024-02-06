@@ -115,7 +115,7 @@ i {
   width: 100%;
 }
 .video-title p {
-  font-size: 18px;
+  font-size: 1.2rem;
   color: #fff;
   font-weight: 500;
   line-height: 1.65;
@@ -143,11 +143,9 @@ i {
   max-width: initial;
   top: 0;
 }
-
 iframe {
   z-index: 3;
 }
-
 .video-thumbnail img,
 iframe {
   position: absolute;
@@ -155,7 +153,6 @@ iframe {
   height: 120vh;
   top: -5px;
   left: 50%;
-  /* width: 100%; */
   height: 100%;
   transform: translate(-50%, 0);
 }
@@ -167,7 +164,6 @@ iframe {
   background: #fff;
 }
 /* 2. #introSulloc */
-
 .introBox {
   display: flex;
   flex-direction: column;
@@ -180,14 +176,13 @@ iframe {
   transition: all 2s;
 }
 .title {
-  font-size: 40px;
+  font-size: 2.5rem;
   text-align: center;
-  font-weight: bold;
-  margin-bottom: 70px;
+  font-weight: 900;
+  margin-bottom: 50px;
 }
 .subtitle {
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 1.4rem;
   margin-bottom: 50px;
 }
 .text-box {
@@ -209,13 +204,11 @@ iframe {
 }
 
 .tab_content {
-  margin: 30px auto;
+  margin: 10px auto;
   text-align: center;
 }
 .conbox {
   display: none;
-  width: 350px;
-  height: 550px;
 }
 .conbox img {
   width: 100%;
@@ -243,6 +236,10 @@ input[type="radio"]:checked + label {
   display: inline-block;
   animation: fadeIn 2.5s ease;
 }
+#tab01, #tab02, #tab03, #tab04, #tab05 {
+  box-shadow: inset 0px -.5em 0 0 rgba(204, 208, 240, 1);
+  width: fit-content;
+}
 .fortab {
   display: flex;
   flex-direction: column;
@@ -250,11 +247,14 @@ input[type="radio"]:checked + label {
   margin: 0 auto;
   align-items: center;
 }
-.fortab video {
-  width: 60%;
+.sigvideo {
+  width: 350px;
+  height: 400px;
+  margin: 10px auto;
 }
-.fortab img {
+.sigvideo video {
   width: 100%;
+  height: 100%;
 }
 .conbox p {
   padding: 10px;
@@ -300,17 +300,27 @@ ul > li > a .screen img {
 }
 
 /* enjoy osulloc */
-
+#enjoy {
+  background: url('images/enjoy_osulloc_bg.png') center/cover no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+#enjoy::before {
+  content: ""; /* 가상 요소생성 */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 10%), url('images/enjoy_osulloc_bg.png') center/cover no-repeat;
+  z-index: 1;
+}
 .enjoyImg {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.enjoyImg img {
-  width: 100%;
-  height: 40vh;
-  margin-bottom: 50px;
-}
+
 .enjoyBtn {
   text-align: center;
   width: 140px;
@@ -328,9 +338,9 @@ ul > li > a .screen img {
 #footer {
   display: flex;
   flex-direction: column;
-  background: #e5e0d2;
+  background: #;
   text-align: left;
-  color: #505050;
+  color: #e5e0d2;
   padding: 10px;
   font-size: 1rem;
 }
@@ -353,9 +363,9 @@ ul > li > a .screen img {
   padding: 0 0.8rem;
   font-weight: 600;
   letter-spacing: 0.01em;
-  color: #373430;
-  border: 0.1rem solid #373430;
-  border-radius: 0.1rem;
+  color: #e5e0d2;
+  border: 0.1rem solid #e5e0d2;
+  border-radius: 0.5rem;
 }
 .navLower {
   display: flex;
@@ -368,7 +378,7 @@ ul > li > a .screen img {
   font-weight: 500;
   line-height: 1.4rem;
   letter-spacing: 0;
-  color: #373430;
+  color: #e5e0d2;
 }
 
 /* 미디어 쿼리 적용 */
@@ -404,7 +414,6 @@ ul > li > a .screen img {
     margin-top: -10vh;
   }
   .title {
-    font-size: 48px;
     margin-bottom: 80px;
   }
   .text-box {
@@ -460,14 +469,14 @@ ul > li > a .screen img {
   .web-bg .title {
     line-height: 1.6;
     position: relative;
-    font-size: 32px;
+    /* font-size: 32px; */
   }
 
   .web-textBox p {
     margin-bottom: 40px;
     word-break: keep-all;
   }
-  */
+  
   /* 가까운 오설록 */
   ul > li > a .screen .top {
     display: block;
@@ -548,6 +557,6 @@ ul > li > a .screen img {
   }
   .footerinfo {
     display: block;
-    font-size: 12px;
+    /* font-size: 12px; */
   }
 }
