@@ -31,9 +31,9 @@
         background: none !important;
       }
     </style>
-
     <script>
       $(document).ready(function () {
+        // 콘텐츠 bx슬라이더
         $(".slider4").bxSlider({
           slideWidth: 300,
           minSlides: 2,
@@ -54,7 +54,9 @@
     <!-- 헤더 -->
     <header>
       <div class="header">
-        <img src="images/Osulloc_text_logo_white.png" />
+        <a href="#web-main"
+          ><img src="images/Osulloc_text_logo_white.png"
+        /></a>
         <nav>
           <input type="checkbox" id="nav_box" />
           <label for="nav_box" id="nav_icon">
@@ -81,7 +83,7 @@
       </div>
     </header>
 
-    <!-- 섹션1: 메인 비디오 -->
+    <!-- section : intro-video -->
     <section id="intro-video">
       <div class="video-sticky"></div>
       <div class="video-wrapper">
@@ -105,11 +107,17 @@
         ></iframe>
       </div>
     </section>
+    <section id="web-main">
+      <div class="active"><img src="images/main4.png" alt="Image 1" /></div>
+      <div><img src="images/main2.png" alt="Image 2" /></div>
+      <div><img src="images/main3.png" alt="Image 3" /></div>
+    </section>
 
-    <!-- 섹션2: 오설록 -->
+    <!-- section : contents -->
     <section id="contents">
-      <!-- 오설록 인트로 -->
+      <!-- introSulloc -->
       <article id="introSulloc">
+        <!-- intro > osulloc -->
         <div class="introBox web-bg">
           <div class="text-box web-textBox">
             <div class="title">오설록</div>
@@ -120,7 +128,7 @@
               수 있게 전통적인 차를 현대적인 이미지로 재해석한 브랜드입니다.
             </p>
           </div>
-          <!-- 인트로-캐러셀 이미지 -->
+          <!-- 캐러셀 -->
           <div class="slider4">
             <div class="slide">
               <img
@@ -166,7 +174,7 @@
             </div>
           </div>
         </div>
-        <!-- 오설록 티 하우스 -->
+        <!-- intro > tea house -->
         <div class="introBox web-bg2">
           <div class="text-box web-textBox2">
             <p class="subtitle">오설록 티 하우스</p>
@@ -176,7 +184,7 @@
               문화를 경험할 수 있는 공간입니다.
             </p>
           </div>
-          <!-- 티하우스 캐러셀 -->
+          <!-- tea house 캐러셀 -->
           <div class="slider4">
             <div class="slide">
               <img
@@ -238,7 +246,7 @@
         </div>
       </article>
 
-      <!-- 시그니처 메뉴 -->
+      <!-- signature -->
       <article id="signature">
         <div class="introBox">
           <div class="text-box">
@@ -272,7 +280,6 @@
                   오설록에서 가장 사랑받는 녹차.
                 </p>
               </div>
-
               <!-- 녹차라떼 -->
               <div class="conbox gtlt">
                 <div class="sigvideo">
@@ -314,16 +321,14 @@
         </div>
       </article>
 
-      <!-- 가까운 오설록 -->
+      <!-- findOsulloc -->
       <article id="findOsulloc">
-        <!-- 문구 -->
         <div class="introBox">
           <p class="title">가까운 오설록</p>
           <p class="text-box">
             도심 속에서 편안한 쉼을 찾고 계신가요?<br />
             나와 가까운 곳에서 차 한잔의 여유를 즐겨보세요.
           </p>
-          <!-- 매장 이름 및 주소 -->
           <div class="gallerylist">
             <ul>
               <li>
@@ -398,8 +403,7 @@
                   <div class="screen">
                     <div class="top">오설록 티하우스 한남점</div>
                     <div class="bottom">
-                      오설록과 페이스갤러리의 협업으로 탄생한 예술과 차 애호가를
-                      위한 차문화 복합 공간
+                      오설록과 페이스갤러리의 협업으로 탄생한 차문화 복합 공간
                     </div>
                     <img
                       src="https://image.osulloc.com/kr/ko/static_cdj/others/image/stdd/osl_stdd_st/teahouse_hannam.jpg"
@@ -431,21 +435,21 @@
         </div>
       </article>
 
-      <!-- 집에서 즐기다 -->
+      <!-- enjoy -->
       <article id="enjoy">
-        <div class="introBox">
+        <div class="introBox enjoytext">
           <p class="title">집에서 즐기다</p>
           <p class="text-box">
-            집에서 즐기는 차 한잔의 여유. 다양한 블렌딩 티로 특별한 자신만의
-            메뉴를 만들어보세요.
+            집에서 즐기는 차 한잔의 여유.<br />
+            다양한 블렌딩 티로 특별한 자신만의 메뉴를 만들어보세요.
           </p>
-          <div class="enjoyImg">
-            <p class="enjoyBtn">
+          <div class="btnbox">
+            <p class="e-btn">
               <a href="https://www.osulloc.com/kr/ko/shop/item/list"
                 >제품 알아보기</a
               >
             </p>
-            <p class="enjoyBtn">
+            <p class="e-btn">
               <a href="https://www.osulloc.com/kr/ko/tealog">레시피 알아보기</a>
             </p>
           </div>
@@ -489,10 +493,10 @@
           <!-- 이 부분이 누락되었습니다 -->
 
           <a href="https://www.instagram.com/osulloc_official/"
-            ><i class="fa-brands fa-instagram fa-xl" style="color: #505051"></i
+            ><i class="fa-brands fa-instagram fa-xl" style="color: #e5e0d2"></i
           ></a>
           <a href="https://www.youtube.com/channel/UC27q_WWuOkdyNIr7M_6trvA"
-            ><i class="fa-brands fa-youtube fa-xl" style="color: #505051"></i
+            ><i class="fa-brands fa-youtube fa-xl" style="color: #e5e0d2"></i
           ></a>
 
           <a href="#"><span>고객센터 : 080-505-5555 (수신자요금부담)</span></a>
